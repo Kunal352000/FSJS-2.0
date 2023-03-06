@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+
+    <!-- deleting element in the screen -->
+
+    <script>
+    let title=document.createElement("h1");
+    title.className="container";
+    title.style.fontSize="25px";
+    title.style.color="green";
+    title.textContent="Creating  and deleting Element in DOM Day2";
+    document.body.appendChild(title);
+    title.remove(); // i am removing this
+    console.log(title);
+
+    </script>
+</body>
+</html>
