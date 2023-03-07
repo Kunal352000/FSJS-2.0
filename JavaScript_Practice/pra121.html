@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>Learning Event Listner</h1>
+    <p id="fsjs">Event Listner</p>
+    <p id="fsjs1">Event Listner</p>
+    <p id="fsjs2">Event Listner</p>
+    <p id="fsjs3">Event Listner</p>
+    <p id="fsjs4">Event Listner</p>
+    <p id="fsjs5">Event Listner</p>
+    <p id="fsjs6">Event Listner</p>
+    <p id="fsjs7">Event Listner</p>
+    <script>
+        document.addEventListener("click",hello);
+        function hello(){
+            document.getElementById("fsjs").innerHTML="Mouse clicked"
+        }
+
+        document.addEventListener("dblclick",hello1);
+        function hello1(){
+            document.getElementById("fsjs1").innerHTML="Double Clicked"
+        }
+
+        document.addEventListener("mouseenter",hello2);
+        function hello2(){
+            document.getElementById("fsjs2").innerText="mouse entered"
+        }
+
+        document.addEventListener("mouseover",hello3);
+        function hello3(){
+            document.getElementById("fsjs3").innerText="mouseover"
+        }
+
+        document.addEventListener("mouseleave",hello4);
+        function hello4(){
+            document.getElementById("fsjs4").innerText="mouseleave"
+        }
+
+        document.addEventListener("keydown",hello5);
+        function hello5(){
+            document.getElementById("fsjs5").innerText="keydown";
+        }
+
+        document.addEventListener("keypress",hello6);
+        function hello6(){
+            document.getElementById("fsjs6").innerText="keypressed"
+        }
+
+        document.addEventListener("onload",hello7);
+        function hello7(){
+            document.getElementById("fsjs7").innerText="onload"
+        }
+    </script>
+</body>
+</html>
