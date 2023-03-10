@@ -9,37 +9,64 @@
 </head>
 <body class="w-screen">
     <!-- creating navbar -->
-    <nav class="w-screen flex bg-neutral-500">
+    <nav class="w-screen flex bg-[#2c2c32] mx-auto items-center sticky">
         <!-- code for logo -->
-        <div class="flex">
+        <div class="flex ml-36">
         <img class="w-8" src="../Assets/vscode.png" alt="vscodelogo">
-        <h1 class="text-xl font-semibold text-neutral-200">Visual Studio Code</h1>
+        <h1 class="text-xl ml-3 font-semibold text-neutral-200">Visual Studio Code</h1>
         </div>
 
-        <div class="flex text-neutral-200 decoration-double">
-            <ul>Docs</ul>
-            <ul>Updates</ul>
-            <ul>Blog</ul>
-            <ul>API</ul>
-            <ul>Extension</ul>
-            <ul>FAQ</ul>
-            <ul>Learn</ul>
+        <div class="flex text-neutral-400   drop-shadow-lg decoration-double ml-8 gap-6">
+            <ul class="hover:text-neutral-50 cursor-pointer">Docs</ul>
+            <ul class="hover:text-neutral-50 cursor-pointer">Updates</ul>
+            <ul class="hover:text-neutral-50 cursor-pointer">Blog</ul>
+            <ul class="hover:text-neutral-50 cursor-pointer">API</ul>
+            <ul class="hover:text-neutral-50 cursor-pointer">Extension</ul>
+            <ul class="hover:text-neutral-50 cursor-pointer">Learn</ul>
+            <ul class="hover:text-neutral-50 cursor-pointer">FAQ</ul>
         </div>
 
-        <!-- component -->
-        <div class="flex items-center justify-center bg-gray-800">
+        <!-- insert text with logo -->
+        <div class="ml-40 flex">
+        <div class="flex items-center justify-center bg-gray-800 ">
             <form method="GET">
             <div class="relative text-gray-600 ">
              <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                <button type="submit" class="p-1 ">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" class="w-6 h-6 text-neutral-200 rotate-90"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <button type="submit" class="p-2 ">
+                <svg fill="none" stroke="currentColor"
+                 stroke-width="1" viewBox="0 0 24 24" class="w-6 h-6 text-neutral-200 rotate-90"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </button>
             </span>
-            <input type="search" name="q" class="py-2 text-sm text-white bg-gray-900 pl-10" placeholder="Search Docs" autocomplete="off">
-        </div>
-        
+            <input type="search" name="q" class="py-5  text-sm text-white bg-neutral-600 pl-10" placeholder="Search Docs" >
+            </div>
             </form>
         </div>
+        <!-- component -->
+        <div class="flex">
+            <button class="bg-[#005ba4] hover:bg-sky-700 text-neutral-200 py-4 px-6  inline-flex items-center">
+                <svg class="text-neutral-200 fill-current w-4 h-4 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                <span class="font-semibold text-lg">Download</span>
+              </button>
+        </div>
+        </div>
+        
     </nav>
+
+    <!-- second line -->
+    <div class="bg-[#25252b] p-2">
+        <p class="text-[#ccc]  decoration-double text-lg text-center"><span class="text-[#005ba4] ">Version 1.76</span> is now available! Read about the new features and fixes from February.</p>
+    </div>
+
+    <!-- third page of the website -->
+    <div class="bg-[#2c2c32]">
+        <div>
+            <h1 class="text-neutral-100 text-5xl text-ellipsis font-thin">Code editing. <span class="font-normal">Redefined.</span></h1>
+            <h4 class="text-neutral-400 text-lg">Free. Built on open source. Runs everywhere.</h4>
+            <div>
+            <button class="bg-[#005ba4]">Download for Windows <small>Stable build</small></button>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
