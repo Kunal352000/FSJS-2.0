@@ -7,9 +7,9 @@
     <title>Visual Studio Code - Code Editing. Redefined</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="w-screen">
+<body class="">
     <!-- creating navbar -->
-    <nav class="w-screen flex bg-[#2c2c32] mx-auto items-center sticky">
+    <nav class="flex bg-[#2c2c32] mx-auto items-center sticky">
         <!-- code for logo -->
         <div class="flex ml-36">
         <img class="w-8" src="../Assets/vscode.png" alt="vscodelogo">
@@ -60,11 +60,11 @@
     <!-- third page of the website -->
     <div class="bg-[#2c2c32] p-10 flex">
         <!-- left side of third page -->
-        <div class="w-1/3 p-10 ml-14 mx-auto">
+        <div class="w-1/3 p-10 ml-12 mx-auto">
             <h1 class="text-neutral-100 text-6xl text-ellipsis text-center leading-none font-thin">Code editing. <span class="font-normal">Redefined.</span></h1>
-            <h4 class="text-neutral-400 text-center m-2 text-lg">Free. Built on open source. Runs everywhere.</h4>
+            <h4 class="text-neutral-400 text-center m-2 mt-4 text-lg">Free. Built on open source. Runs everywhere.</h4>
             
-            <div class="flex mx-auto items-center justify-center">
+            <div class="flex mx-auto items-center justify-center mt-6">
             <button class="bg-[#005ba4] h-16 w-64 p-3 hover:bg-sky-700 text-neutral-100 text-ellipsis font-semibold text-lg leading-tight">Download for Windows <br> <small class="font-normal">Stable build</small></button>
 
             <button class=" m-0.5 w-12  hover:bg-sky-700 h-16 bg-[#005ba4]"><img class="rotate-90 mx-auto" src="../Assets/icons8-greater-than-30.png" alt=""></button>
@@ -80,13 +80,31 @@
         </div>
 
         <div>
-            <img class=" h-[560px] w-[800px] mr-24" src="../Assets/homeimg.png" alt="">
+            <img class=" h-[560px] w-[700px] mr-20 " src="../Assets/homeimg.png" alt="">
         </div>
     </div>
 
     <!-- fourth page of the website -->
-    <div>
-        <img src="../Assets/yaml.svg" alt="">
+    <div class="w-fit flex mx-auto gap-52 mt-8">
+        <div>
+            <img class="items-center justify-center mx-auto" src="../Assets/lightbulb.png" alt="bulbicon">
+            <h3 class="text-[#000] pt-2 text-center text-xl">Intellisense</h3>
+        </div>
+
+        <div>
+            <img class="mx-auto" src="../Assets/RunAndDebug.png" alt="runanddebufimage">
+            <h3 class="text-[#000] pt-2 text-xl">Run and Debug</h3>
+        </div>
+
+        <div>
+            <img class="mx-auto" src="../Assets/Built-in Git.png" alt="gitimage">
+            <h3 class="text-[#000] pt-2 text-xl">Built-in Git</h3>
+        </div>
+
+        <div>
+            <img class="mx-auto" src="../Assets/Extensions.png" alt="extensionimage">
+            <h3 class="text-[#000] pt-2 text-xl">Extensions</h3>
+        </div>
     </div>
 </body>
 </html>
