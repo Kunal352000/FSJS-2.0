@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let b = 100;
+        {
+            var a = 10;
+            let b = 20;
+            const c = 30;
+            console.log(a);//10
+            console.log(b);//20
+            console.log(c);//30
+        }
+        console.log(b);//100
+
+        // let b = 20 is in block scope and let b =100 is another block scope that why we get different o/p 
+    </script>
+</body>
+</html>

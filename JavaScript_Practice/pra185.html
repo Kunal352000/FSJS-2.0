@@ -8,14 +8,14 @@
 </head>
 <body>
     <script>
-        {
-            //compound statment
-            var a =10;
-            console.log(a);
+        //shadowing is behaving in the function as at is
+        const c = 100;
+        function x(){
+            const c = 30;
+            console.log(c); //30
         }
-        if(true)
-
-        //uncaught syntaxerror: unexpected end of input
+        x();
+        console.log(c); //100
     </script>
 </body>
 </html>
