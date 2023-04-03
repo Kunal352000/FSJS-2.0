@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // shadowing is the behaving function as at is
+        const c = 100;
+        function x(){
+            let a = 10;
+            var b = 20;
+            const c = 30;
+            console.log(c) //30
+        }
+        console.log(c)//100
+        x()
+    </script>
+</body>
+</html>

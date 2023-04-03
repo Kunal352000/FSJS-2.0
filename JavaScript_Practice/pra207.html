@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // javascript doest wait for anyone
+        function x(){
+            for(var i = 1; i <= 5; i++){
+                setTimeout(function(){
+                    console.log(i);
+                },i*1000)
+            }
+            console.log("hey");
+        }
+        x();
+
+        //its working in this way because of closure, so remeber what happen when closure is form a closer is a function along with its lexical enironment even when the function is taking out for its original scope,if its executed in other scope still it rember the lexical environment.
+
+        // when the setTimepout takes the function and store the function somewhere and attah the timer so the function rember the refernece to the i not the value of i.
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function x(){
+            for(let i=1; i<=5; i++){
+                setTimeout(function(){
+                    console.log(i)
+                },i*2000)
+            }
+            console.log("hey kunal")
+        }
+        x();
+
+        // let has a block scope, for each and every loop iteration,whenever every time loop runs so the i is new variable all together and each time setTimeOut is run this callback function is new copy of i with it,its own identity of i its is.
+    </script>
+</body>
+</html>
