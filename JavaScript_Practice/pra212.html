@@ -8,22 +8,24 @@
 </head>
 <body>
     <script>
-        // what is anonymus function
-        // A function without name is called anonymous function
-
-        // What is function statment
-        // A way of creating a function is known as function statement
+        // the major difference b/w function statment and function expression are hoisting
         // function statment
+        a(); // a is called
+        b(); //typeerror b is not a function
         function a(){
             console.log("a is called")
         }
+        // a();
 
-        // What is function expression
-        // A beautiful feature of function is to assigned to variable,function acts like a variable
         // function expression
-        var b = function (){
-            console.log("b called")
+        var b = function(){
+            console.log("b is called");
         }
+        // b();
+
+        // function statment is alos known as function  declartions
+            
+        
     </script>
 </body>
 </html>
