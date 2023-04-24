@@ -8,19 +8,12 @@
 </head>
 <body>
     <script>
-        //callback function in JavaScript
-        setTimeout(function (){
-            console.log("timer")
-        },5000);
-
-        function x(y){
-            console.log("inside x")
-            y();
-        }
-
-        x(function y(){
-            console.log("inside y")
-        })
+        var b = function xyz(){
+    console.log("This is the function expression");
+}
+console.log(b);
+b();
+xyz();
     </script>
 </body>
 </html>
