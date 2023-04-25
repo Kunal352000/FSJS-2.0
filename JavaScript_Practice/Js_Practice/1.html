@@ -8,18 +8,13 @@
 </head>
 <body>
     <script>
-    a();
-    b();
-
-    //function statement
     function a(){
-        console.log("This is the function statement");
+    console.log("I was caled a function");
     }
-
-    //function expression
-    var b = function(){
-        console.log("This is the function expression")
+    function b(){
+        a();
     }
+    b();
     </script>
 </body>
 </html>

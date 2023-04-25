@@ -8,18 +8,13 @@
 </head>
 <body>
     <script>
-    a();
-    b();
-
-    //function statement
-    function a(){
-        console.log("This is the function statement");
+    const callback = (n) => {
+        return n**2;
+    };
+    function cube(callback,n){
+        return callback(n)*n;
     }
-
-    //function expression
-    var b = function(){
-        console.log("This is the function expression")
-    }
+    console.log(cube(callback,2));
     </script>
 </body>
 </html>

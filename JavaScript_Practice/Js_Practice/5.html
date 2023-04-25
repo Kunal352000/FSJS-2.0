@@ -8,18 +8,9 @@
 </head>
 <body>
     <script>
-    a();
-    b();
-
-    //function statement
-    function a(){
-        console.log("This is the function statement");
-    }
-
-    //function expression
-    var b = function(){
-        console.log("This is the function expression")
-    }
+        const num = [1,2,3,4,5,6,7];
+        const sum = num.reduce( (acc,curr) => acc+curr,0);
+        console.log(sum);
     </script>
 </body>
 </html>
